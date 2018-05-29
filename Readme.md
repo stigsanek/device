@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Александр Егоров](https://up.htmlacademy.ru/htmlcss/21/user/646269).
-* Наставник: `Неизвестно`.
+* Наставник: [Никита Сигов](https://htmlacademy.ru/profile/crazer).
 
 ---
 
