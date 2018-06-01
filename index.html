@@ -1,12 +1,105 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Девайс</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Профессиональный HTML и CSS, уровень 1</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>Девайс</title>
+</head>
 
-  </body>
+<body>
+  <header class="main-header">
+    <nav class="main-navigation">
+      <a class="main-header-logo">
+        <span>Device</span>
+      </a>
+      <ul class="user-navigation">
+        <li>Поиск по сайту (здесь будет форма)</li>
+        <li>Войти</li>
+        <li>Сравнить</li>
+        <li>Корзина</li>
+      </ul>
+      <ul class="site-navigation">
+        <li>
+          <a href="catalog.html">Каталог товаров</a>
+          <ul class="site-navigation-catalog">
+            <li><a href="vr.html">Виртуальная реальность</a></li>
+            <li><a href="monopods.html">Моноподы для селфи</a></li>
+            <li><a href="action-cameras.html">Экшн-камеры</a></li>
+            <li><a href="fitness-wristbands.html">Фитнес-браслеты</a></li>
+            <li><a href="smart-watch.html">Умные часы</a></li>
+            <li><a href="quadcopters.html">Квадрокоптеры</a></li>
+          </ul>
+        </li>
+        <li><a href="delivery.html">Доставка</a></li>
+        <li><a href="guarantee.html">Гарантия</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="container">
+
+    <h1 class="visually-hidden">Device: Интернет-магазин гаджетов</h1>
+
+    <section class="new-product">
+      <h2 class="visually-hidden">Новая продукция</h2>
+      <ul class="new-product-list">
+        <li class="new-product-item">
+          <img src="img/monopod.jpg" width="" height="" alt="Монопод для селфи">
+          <span>01</span>
+          <h3>Делай селфи, как Бен Стиллер!</h3>
+          <p>Самая длинная палка для селфи доступна в нашем магазине.</p>
+          <p>Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+          <a href="new-product-monopod.html">Подробнее</a>
+          <table class="new-product-features">
+            <tr>
+              <th>Длинна палки</th>
+              <th>Вес палки</th>
+              <th>Материал</th>
+            </tr>
+            <tr>
+              <td>8,5 м</td>
+              <td>5 кг</td>
+              <td>Карбон</td>
+            </tr>
+          </table>
+        </li>
+        <li class="new-product-item">
+          <img src="img/wristband.jpg" width="" height="" alt="Фитнес-браслет">
+          <span>02</span>
+          <h3>Худеем правильно!</h3>
+          <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+          <a href="new-product-wristband.html">Подробнее</a>
+          <table class="new-product-features">
+            <tr>
+              <th>Без подзарядки</th>
+            </tr>
+            <tr>
+              <td>48 часов</td>
+            </tr>
+          </table>
+        </li>
+        <li class="new-product-item">
+          <img src="img/quadcopter.jpg" width="" height="" alt="Квадрокоптер">
+          <span>03</span>
+          <h3>Пархает как бабочка, жалит как пчела!</h3>
+          <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+          <a href="new-product-quadcopter.html">Подробнее</a>
+          <table class="new-product-features">
+            <tr>
+              <th>Дальность полета</th>
+              <th>Радиус поражения</th>
+            </tr>
+            <tr>
+              <td>800 м</td>
+              <td>50 м</td>
+            </tr>
+          </table>
+        </li>
+      </ul>
+    </section>
+
+  </main>
+
+</body>
+
 </html>
