@@ -9,14 +9,12 @@
 <body>
   <header class="main-header">
     <nav class="main-navigation">
-      <a class="main-header-logo" href="index.html">
-        <span>Device</span>
-      </a>
+      <a class="main-header-logo" href="index.html">Device</a>
       <div class="user-navigation">
-        <!--здесь будет форма поиска-->
+        <!--Здесь будет форма поиска-->
         <ul class="user-login">
           <li><a href="profile.html">Валентин Петухов</a></li>
-          <li><span>Выйти</span></li>
+          <li><a href="logout.html">Выйти</a></li>
         </ul>
         <a href="compare.html">Сравнить</a>
         <a href="basket.html">Корзина</a>
@@ -62,39 +60,47 @@
         <li class="sort-item">По типу</li>
         <li class="sort-item">По популярности</li>
       </ul>
-      <span class="sort-btn">По убыванию</span>
-      <span class="sort-btn current">По возрастанию</span>
+      <ul class="sort-list-btn">
+        <li class="sort-item-btn">По убыванию</li>
+        <li class="sort-item-btn current">По возрастанию</li>
+      </ul>
     </section>
 
     <section class="catalog">
       <h2 class="visually-hidden">Список моноподов для селфи</h2>
       <ul class="catalog-list">
         <li class="catalog-item">
-          <h3><a href="catalog-item.html">Любительская селфи-палка</a></h3>
-          <span class="catalog-price">500 руб.</span>
-          <img src="img/monopod.jpg" width="360" height="380" alt="Любительская селфи-палка">
-          <div class="catalog-item-container">
-            <span class="btn">В корзину</span>
-            <span class="catalog-btn">Добавить к сравнению</span>
-          </div>
+          <article>
+            <h3><a href="catalog-item.html">Любительская селфи-палка</a></h3>
+            <span class="catalog-price">500 руб.</span>
+            <img src="img/monopod.jpg" width="360" height="380" alt="Любительская селфи-палка">
+            <div class="catalog-item-container">
+              <span class="btn">В корзину</span>
+              <span class="catalog-btn">Добавить к сравнению</span>
+            </div>
+          </article>
         </li>
         <li class="catalog-item">
-          <h3><a href="catalog-item.html">Профессиональная селфи-палка</a></h3>
-          <span class="catalog-price">1500 руб.</span>
-          <img src="img/monopod.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
-          <div class="catalog-item-container">
-            <span class="btn">В корзину</span>
-            <span class="catalog-btn">Добавить к сравнению</span>
-          </div>
+          <article>
+            <h3><a href="catalog-item.html">Профессиональная селфи-палка</a></h3>
+            <span class="catalog-price">1500 руб.</span>
+            <img src="img/monopod.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
+            <div class="catalog-item-container">
+              <span class="btn">В корзину</span>
+              <span class="catalog-btn">Добавить к сравнению</span>
+            </div>
+          </article>
         </li>
         <li class="catalog-item">
-          <h3><a href="catalog-item.html">Непотопляемая селфи-палка</a></h3>
-          <span class="catalog-price">2500 руб.</span>
-          <img src="img/monopod.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
-          <div class="catalog-item-container">
-            <span class="btn">В корзину</span>
-            <span class="catalog-btn">Добавить к сравнению</span>
-          </div>
+          <article>
+            <h3><a href="catalog-item.html">Непотопляемая селфи-палка</a></h3>
+            <span class="catalog-price">2500 руб.</span>
+            <img src="img/monopod.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
+            <div class="catalog-item-container">
+              <span class="btn">В корзину</span>
+              <span class="catalog-btn">Добавить к сравнению</span>
+            </div>
+          </article>
         </li>
         <li class="catalog-item">
           <h3><a href="catalog-item.html">Селфи-палка «Следуй за мной»</a></h3>
@@ -108,27 +114,23 @@
         </li>
       </ul>
 
-      <div class="pagination">
-        <span class="pagination-btn">Назад</span>
-        <ul class="pagination-list">
-          <li class="pagination-item current"><a>1</a></li>
-          <li class="pagination-item"><a href="#">2</a></li>
-          <li class="pagination-item"><a href="#">3</a></li>
-        </ul>
-        <span class="pagination-btn">Вперед</span>
-      </div>
+      <ul class="pagination-list">
+        <li class="pagination-item"><a href="#">Назад</a></li>
+        <li class="pagination-item current"><a>1</a></li>
+        <li class="pagination-item"><a href="#">2</a></li>
+        <li class="pagination-item"><a href="#">3</a></li>
+        <li class="pagination-item"><a href="#">Вперед</a></li>
+      </ul>
     </section>
 
   </main>
 
   <footer class="main-footer">
     <div class="footer-top">
-      <a class="footer-logo" href="index.html">
-        <span>Device</span>
-      </a>
+      <a class="footer-logo" href="index.html">Device</a>
       <ul class="user-login">
         <li><a href="profile.html">Валентин Петухов</a></li>
-        <li><span>Выйти</span></li>
+        <li><a href="logout.html">Выйти</a></li>
       </ul>
       <a href="compare.html">Сравнить</a>
       <a href="basket.html">Корзина</a>
