@@ -222,13 +222,25 @@
 
   <section class="modal modal-write-us">
     <h2 class="visually-hidden">Напишите нам</h2>
-    <!--Здесь будет форма-->
-    <span class="modal-cose">x</span>
+    <form class="form-write-us" action="https://echo.htmlacademy.ru" method="post">
+      <div class="form-container">
+        <label for="name-field">Ваше имя:</label>
+        <input type="text" id="name-field" name="name" value="" placeholder="Имя Фамилия">
+        <label for="email-field">Ваш e-mail:</label>
+        <input type="email" id="email-field" name="email" value="" placeholder="email@example.com">
+      </div>
+      <div class="form-container">
+        <label for="text-fild">Текст письма:</label>
+        <textarea id="text-fild" name="text" placeholder="В свободной форме"></textarea>
+      </div>
+      <button class="btn" type="submit">Отправить</button>
+    </form>
+    <button class="modal-cose" type="button">Закрыть</button>
   </section>
 
   <section class="modal modal-map">
     <h2 class="visually-hidden">Как до нас добраться</h2>
-    <span class="modal-cose">x</span>
+    <button class="modal-cose" type="button">Закрыть</button>
   </section>
 
 </body>
