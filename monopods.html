@@ -56,20 +56,14 @@
       <form class="form-filter" action="https://echo.htmlacademy.ru" method="get" oninput="costoutput.value=cost.value">
         <fieldset>
           <legend>Стоимость</legend>
-          <ul>
-            <li class="filter-option">
-              <label class="visually-hidden" for="cost-field">Цена</label>
-              <input class="filter-cost" type="range" id="cost-field" name="cost" value="5000" step="500" min="0" max="8000">
-            </li>
-            <li class="filter-option">
-              <label>
-                От <output>0</output>
-              </label>
-              <label>
-                До <output name="costoutput">5000</output>
-              </label>
-            </li>
-          </ul>
+          <label class="visually-hidden" for="cost-field">Цена</label>
+          <input class="filter-cost" type="range" id="cost-field" name="cost" value="5000" step="500" min="0" max="8000">
+          <label>
+            От <output>0</output>
+          </label>
+          <label>
+            До <output name="costoutput">5000</output>
+          </label>
         </fieldset>
         <fieldset>
           <legend>Цвет</legend>
