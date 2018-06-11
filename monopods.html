@@ -11,7 +11,10 @@
     <nav class="main-navigation">
       <a class="main-header-logo" href="index.html">Device</a>
       <div class="user-navigation">
-        <!--Здесь будет форма поиска-->
+        <form class="form-search" action="https://echo.htmlacademy.ru" method="post">
+          <label for="search-field">Поиск по сайту</label>
+          <input type="search" id="search-field" name="search" placeholder="Поиск по сайту">
+        </form>
         <ul class="user-login">
           <li><a href="profile.html">Валентин Петухов</a></li>
           <li><a href="logout.html">Выйти</a></li>
@@ -50,19 +53,76 @@
 
     <section class="filters">
       <h2>Фильтр:</h2>
-      <!--Здесь будет форма-->
+      <form class="form-filter" action="https://echo.htmlacademy.ru" method="get" oninput="costoutput.value=cost.value">
+        <fieldset>
+          <legend>Стоимость</legend>
+          <ul>
+            <li class="filter-option">
+              <label class="visually-hidden" for="cost-field">Цена</label>
+              <input class="filter-cost" type="range" id="cost-field" name="cost" value="5000" step="500" min="0" max="8000">
+            </li>
+            <li class="filter-option">
+              <label>
+                От <output>0</output>
+              </label>
+              <label>
+                До <output name="costoutput">5000</output>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Цвет</legend>
+          <ul>
+            <li class="filter-option">
+              <input class="visually-hidden filter-color" type="checkbox" id="black-field" name="black" checked>
+              <label for="black-field">Черный</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-color" type="checkbox" id="white-field" name="white">
+              <label for="white-field">Белый</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-color" type="checkbox" id="blue-field" name="blue" checked>
+              <label for="blue-field">Синий</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-color" type="checkbox" id="red-field" name="red" checked>
+              <label for="red-field">Красный</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-color" type="checkbox" id="pink-field" name="pink">
+              <label for="pink-field">Розовый</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Bluetooth</legend>
+          <ul>
+            <li class="filter-option">
+              <input class="visually-hidden filter-bluetoth" type="radio" id="bluetoth-field-on" name="bluetoth" value="on" checked>
+              <label for="bluetoth-field-on">Есть</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-bluetoth" type="radio" id="bluetoth-field-off" name="bluetoth" value="off">
+              <label for="bluetoth-field-off">Нет</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button class="btn" type="submit">Показать</button>
+      </form>
     </section>
 
     <section class="sort">
       <h2>Сортировка:</h2>
       <ul class="sort-list">
-        <li class="sort-item current">По цене</li>
-        <li class="sort-item">По типу</li>
-        <li class="sort-item">По популярности</li>
+        <li><button class="sort-item current" type="button">По цене</button></li>
+        <li><button class="sort-item" type="button">По типу</button></li>
+        <li><button class="sort-item" type="button">По популярности</button></li>
       </ul>
       <ul class="sort-list-btn">
-        <li class="sort-item-btn">По убыванию</li>
-        <li class="sort-item-btn current">По возрастанию</li>
+        <li><button class="sort-item-btn" type="button">По убыванию</button></li>
+        <li><button class="sort-item-btn current" type="button">По возрастанию</button></li>
       </ul>
     </section>
 
@@ -75,8 +135,8 @@
             <span class="catalog-price">500 руб.</span>
             <img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
             <div class="catalog-item-container">
-              <span class="btn">В корзину</span>
-              <span class="catalog-btn">Добавить к сравнению</span>
+              <button class="btn" type="button">В корзину</button>
+              <button class="catalog-btn" type="button">Добавить к сравнению</button>
             </div>
           </article>
         </li>
@@ -86,8 +146,8 @@
             <span class="catalog-price">1500 руб.</span>
             <img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
             <div class="catalog-item-container">
-              <span class="btn">В корзину</span>
-              <span class="catalog-btn">Добавить к сравнению</span>
+              <button class="btn" type="button">В корзину</button>
+              <button class="catalog-btn" type="button">Добавить к сравнению</button>
             </div>
           </article>
         </li>
@@ -97,8 +157,8 @@
             <span class="catalog-price">2500 руб.</span>
             <img src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
             <div class="catalog-item-container">
-              <span class="btn">В корзину</span>
-              <span class="catalog-btn">Добавить к сравнению</span>
+              <button class="btn" type="button">В корзину</button>
+              <button class="catalog-btn" type="button">Добавить к сравнению</button>
             </div>
           </article>
         </li>
@@ -108,8 +168,8 @@
           <span>New</span>
           <img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
           <div class="catalog-item-container">
-            <span class="btn">В корзину</span>
-            <span class="catalog-btn">Добавить к сравнению</span>
+            <button class="btn" type="button">В корзину</button>
+            <button class="catalog-btn" type="button">Добавить к сравнению</button>
           </div>
         </li>
       </ul>
@@ -151,7 +211,7 @@
         <li><a href="https://twitter.com/htmlacademy_ru">Мы в Twitter</a></li>
       </ul>
       <a class="footer-copyright" href="https://htmlacademy.ru/intensive/htmlcss">
-        <img src="img/logo-html.svg" width="27" height="35" alt="HTML academy">
+        <img src="img/logo-html.svg" width="27" height="35" alt="Логотип HTML academy">
       </a>
     </div>
   </footer>
