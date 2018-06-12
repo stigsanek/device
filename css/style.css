@@ -77,7 +77,8 @@ a {
 }
 
 .main-navigation ul,
-.new-product ul {
+.new-product ul,
+.product ul {
   list-style: none;
 }
 
@@ -139,11 +140,11 @@ input[type="search"] + button:active {
 
 .user-navigation a:hover,
 .user-navigation a:focus {
-  color: rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .user-navigation a:active {
-  opacity: 0.3;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .site-navigation a {
@@ -197,4 +198,15 @@ input[type="search"] + button:active {
   font-size: 179.2px;
   font-family: "Gilroy Extrabold", "Arial", sans-serif;
   line-height: 179.2px;
+}
+
+.product-item a {
+  color: #000000;
+  font-size: 18px;
+  font-family: "Gilroy Extrabold", "Arial", sans-serif;
+  line-height: 24px;
+}
+
+.product-item a:active {
+  color: rgba(0, 0, 0, 0.3);
 }
