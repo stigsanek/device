@@ -91,11 +91,17 @@ a {
 }
 
 .main-header-logo:hover,
-.main-header-logo:focus {
+.main-header-logo:focus,
+.user-navigation a:hover,
+.user-navigation a:focus,
+.site-navigation a:hover,
+.site-navigation a:focus {
   color: rgba(0, 0, 0, 0.6);
 }
 
-.main-header-logo:active {
+.main-header-logo:active,
+.user-navigation a:active,
+.site-navigation a:active {
   color: rgba(0, 0, 0, 0.3);
 }
 
@@ -138,15 +144,6 @@ input[type="search"] + button:active {
   color: #000000;
 }
 
-.user-navigation a:hover,
-.user-navigation a:focus {
-  color: rgba(0, 0, 0, 0.6);
-}
-
-.user-navigation a:active {
-  color: rgba(0, 0, 0, 0.3);
-}
-
 .site-navigation a {
   color: #000000;
   text-transform: uppercase;
@@ -162,15 +159,6 @@ input[type="search"] + button:active {
   font-size: 15px;
   font-family: "Open Sans Light", "Arial", sans-serif;
   line-height: 36px;
-}
-
-.site-navigation a:hover,
-.site-navigation a:focus {
-  color: rgba(0, 0, 0, 0.6);
-}
-
-.site-navigation a:active {
-  color: rgba(0, 0, 0, 0.3);
 }
 
 .new-product-item h3 {
