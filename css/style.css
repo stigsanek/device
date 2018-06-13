@@ -78,7 +78,8 @@ a {
 
 .main-navigation ul,
 .new-product ul,
-.product ul {
+.product .product-list,
+.service .service-list {
   list-style: none;
 }
 
@@ -197,4 +198,43 @@ input[type="search"] + button:active {
 
 .product-item a:active {
   color: rgba(0, 0, 0, 0.3);
+}
+
+.service {
+  background-color: #e5e5e5;
+}
+
+.service-btn .btn:active {
+  background-color: #000000;
+  color: #f7e184;
+}
+
+.service-btn .btn.current {
+  background-color: #000000;
+  color: #f7e184;
+}
+
+.service-item h3 {
+  color: #000000;
+  font-size: 47px;
+  font-family: "Gilroy Extrabold", "Arial", sans-serif;
+  line-height: 48px;
+}
+
+.service-item:nth-of-type(1) {
+  background-image: url("../img/delivery.svg");
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+.service-item:nth-of-type(2) {
+  background-image: url("../img/warranty.svg");
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+.service-item:nth-of-type(3) {
+  background-image: url("../img/credit.svg");
+  background-repeat: no-repeat;
+  background-position: right center;
 }
