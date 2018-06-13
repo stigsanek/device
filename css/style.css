@@ -81,6 +81,9 @@ a {
 .product .product-list,
 .service .service-list,
 .brands .brands-list,
+.breadcrumbs,
+.filters ul,
+.sort ul,
 .footer-middle .site-navigation,
 .main-footer .user-login,
 .main-footer .footer-social-btn {
@@ -199,6 +202,7 @@ input[type="search"] + button:active {
 }
 
 .product-item a,
+.filters legend,
 .modal-write-us label {
   color: #000000;
   font-size: 18px;
@@ -226,7 +230,8 @@ input[type="search"] + button:active {
 
 .service-item h3,
 .about-company h2,
-.contatcs h2 {
+.contatcs h2,
+.page-title {
   color: #000000;
   font-size: 47px;
   font-family: "Gilroy Extrabold", "Arial", sans-serif;
@@ -256,6 +261,72 @@ input[type="search"] + button:active {
   font-size: 16px;
   font-family: "Gilroy Extrabold", "Arial", sans-serif;
   line-height: 40px;
+}
+
+.breadcrumbs a {
+  color: rgba(0, 0, 0, 0.3);
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.breadcrumbs a:hover,
+.breadcrumbs a:focus {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.breadcrumbs a:active {
+  color: rgba(0, 0, 0, 0.1);
+}
+
+.filters h2,
+.sort h2 {
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: 3.2px;
+  font-size: 16px;
+  font-family: "Gilroy Extrabold", "Arial", sans-serif;
+  line-height: 24px;
+}
+
+.filters fieldset {
+  border: none;
+}
+
+fieldset:nth-of-type(1) label {
+  color: rgba(0, 0, 0, 0.2);
+  text-transform: lowercase;
+  font-size: 14px;
+  font-family: "Gilroy Light", "Arial", sans-serif;
+  line-height: 24px;
+}
+
+.filter-option {
+  color: #000000;
+  font-size: 14px;
+  line-height: 40px;
+}
+
+.filter-color:disabled + label,
+.filter-bluetoth:disabled + label {
+  color: #a6a6a6;
+}
+
+.sort-item,
+.sort-item-btn {
+  color: rgba(0, 0, 0, 0.3);
+  font-size: 14px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  line-height: 18px;
+}
+
+.sort-item:hover,
+.sort-item:focus {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.sort-item:active,
+.sort-item.current {
+  color: #000000;
 }
 
 .main-footer {
@@ -322,8 +393,8 @@ input[type="search"] + button:active {
 .modal-write-us input,
 .modal-write-us textarea {
   border: none;
-  background-color: #f2f2f2;
   border: 3px solid #f2f2f2;
+  background-color: #f2f2f2;
   font-size: 14px;
   font-family: "Open Sans", "Arial", sans-serif;
   line-height: 18px;
@@ -331,8 +402,8 @@ input[type="search"] + button:active {
 
 .modal-write-us input:hover,
 .modal-write-us textarea:hover {
-  background-color: #eaeaea;
   border: 3px solid #eaeaea;
+  background-color: #eaeaea;
 }
 
 .modal-write-us input:focus,
