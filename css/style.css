@@ -84,6 +84,8 @@ a {
 .breadcrumbs,
 .filters ul,
 .sort ul,
+.catalog-list,
+.pagination-list,
 .footer-middle .site-navigation,
 .main-footer .user-login,
 .main-footer .footer-social-btn {
@@ -203,6 +205,7 @@ input[type="search"] + button:active {
 
 .product-item a,
 .filters legend,
+.catalog-item a,
 .modal-write-us label {
   color: #000000;
   font-size: 18px;
@@ -327,6 +330,42 @@ fieldset:nth-of-type(1) label {
 .sort-item:active,
 .sort-item.current {
   color: #000000;
+}
+
+.catalog-item img:hover {
+  opacity: 0.7;
+}
+
+.catalog-price {
+  font-size: 16px;
+  font-family: "Gilroy Light", "Arial", sans-serif;
+  line-height: 24px;
+}
+
+.catalog-price + span {
+  color: rgba(0, 0, 0, 0.2);
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: "Gilroy Light", "Arial", sans-serif;
+  line-height: 24px;
+}
+
+.catalog-btn {
+  border: none;
+  background-color: transparent;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 13px;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+.catalog-btn:hover,
+.catalog-btn:focus {
+  color: #000000;
+}
+
+.catalog-btn:active {
+  color: rgba(0, 0, 0, 0.2);
 }
 
 .main-footer {
