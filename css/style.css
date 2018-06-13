@@ -198,7 +198,8 @@ input[type="search"] + button:active {
   line-height: 179.2px;
 }
 
-.product-item a {
+.product-item a,
+.modal-write-us label {
   color: #000000;
   font-size: 18px;
   font-family: "Gilroy Extrabold", "Arial", sans-serif;
@@ -234,20 +235,20 @@ input[type="search"] + button:active {
 
 .service-item:nth-of-type(1) {
   background-image: url("../img/delivery.svg");
-  background-repeat: no-repeat;
   background-position: right center;
+  background-repeat: no-repeat;
 }
 
 .service-item:nth-of-type(2) {
   background-image: url("../img/warranty.svg");
-  background-repeat: no-repeat;
   background-position: right center;
+  background-repeat: no-repeat;
 }
 
 .service-item:nth-of-type(3) {
   background-image: url("../img/credit.svg");
-  background-repeat: no-repeat;
   background-position: right center;
+  background-repeat: no-repeat;
 }
 
 .about-company .transport-commany-item {
@@ -316,4 +317,32 @@ input[type="search"] + button:active {
 
 .footer-bottom .footer-copyright:active {
   opacity: 0.3;
+}
+
+.modal-write-us input,
+.modal-write-us textarea {
+  border: none;
+  background-color: #f2f2f2;
+  border: 3px solid #f2f2f2;
+  font-size: 14px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  line-height: 18px;
+}
+
+.modal-write-us input:hover,
+.modal-write-us textarea:hover {
+  background-color: #eaeaea;
+  border: 3px solid #eaeaea;
+}
+
+.modal-write-us input:focus,
+.modal-write-us textarea:focus {
+  border: 3px solid rgba(240, 197, 46, 0.5);
+  background-color: transparent;
+}
+
+.modal-write-us input:invalid,
+.modal-write-us textarea:invalid {
+  border: 3px solid #f6dada;
+  background-color: #f6dada;
 }
