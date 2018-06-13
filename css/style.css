@@ -195,7 +195,7 @@ input[type="search"] + button:active {
   line-height: 20px;
 }
 
-.new-product-item .slide-number {
+.slide-number {
   background-color: rgba(240, 197, 46, 0.5);
   color: #ffffff;
   font-size: 179.2px;
@@ -259,7 +259,7 @@ input[type="search"] + button:active {
   background-repeat: no-repeat;
 }
 
-.about-company .transport-commany-item {
+.transport-commany-item {
   color: #000000;
   font-size: 16px;
   font-family: "Gilroy Extrabold", "Arial", sans-serif;
@@ -279,6 +279,12 @@ input[type="search"] + button:active {
 
 .breadcrumbs a:active {
   color: rgba(0, 0, 0, 0.1);
+}
+
+.filters,
+.sort,
+.pagination-list {
+  background-color: #ebebeb;
 }
 
 .filters h2,
@@ -368,6 +374,39 @@ fieldset:nth-of-type(1) label {
   color: rgba(0, 0, 0, 0.2);
 }
 
+.pagination-item a {
+  color: rgba(0, 0, 0, 0.3);
+  text-transform: uppercase;
+  letter-spacing: 3.2px;
+  font-size: 16px;
+  font-family: "Gilroy Extrabold", "Arial", sans-serif;
+  line-height: 24px;
+}
+
+.pagination-item a:hover,
+.pagination-item a:focus {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.pagination-item a:active {
+  color: #000000;
+}
+
+.pagination-item.current a,
+.pagination-btn a {
+  color: #000000;
+}
+
+.pagination-btn a:hover,
+.pagination-btn a:focus {
+  background-color: #d9d9d9;
+}
+
+.pagination-btn a:active {
+  color: rgba(0, 0, 0, 0.3);
+  background-color: #d9d9d9;
+}
+
 .main-footer {
   background-color: #464646;
   color: #ffffff;
@@ -420,12 +459,12 @@ fieldset:nth-of-type(1) label {
   color: #ffffff;
 }
 
-.footer-bottom .footer-copyright:hover,
-.footer-bottom .footer-copyright:focus {
+.footer-copyright:hover,
+.footer-copyright:focus {
   opacity: 0.6;
 }
 
-.footer-bottom .footer-copyright:active {
+.footer-copyright:active {
   opacity: 0.3;
 }
 
