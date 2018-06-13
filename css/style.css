@@ -79,7 +79,8 @@ a {
 .main-navigation ul,
 .new-product ul,
 .product .product-list,
-.service .service-list {
+.service .service-list,
+.brands .brands-list {
   list-style: none;
 }
 
@@ -214,7 +215,9 @@ input[type="search"] + button:active {
   color: #f7e184;
 }
 
-.service-item h3 {
+.service-item h3,
+.about-company h2,
+.contatcs h2 {
   color: #000000;
   font-size: 47px;
   font-family: "Gilroy Extrabold", "Arial", sans-serif;
@@ -237,4 +240,11 @@ input[type="search"] + button:active {
   background-image: url("../img/credit.svg");
   background-repeat: no-repeat;
   background-position: right center;
+}
+
+.about-company .transport-commany-item {
+  color: #000000;
+  font-size: 16px;
+  font-family: "Gilroy Extrabold", "Arial", sans-serif;
+  line-height: 40px;
 }
