@@ -80,11 +80,15 @@ a {
 .new-product ul,
 .product .product-list,
 .service .service-list,
-.brands .brands-list {
+.brands .brands-list,
+.footer-middle .site-navigation,
+.main-footer .user-login,
+.main-footer .footer-social-btn {
   list-style: none;
 }
 
-.main-header-logo {
+.main-header-logo,
+.footer-logo {
   color: #000000;
   text-transform: uppercase;
   font-size: 48px;
@@ -139,11 +143,15 @@ input[type="search"] + button:focus {
 
 input[type="search"] + button:active {
   background-color: #000000;
-  color: rgba(257, 257, 257, 0.3);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .user-navigation a {
   color: #000000;
+}
+
+.user-login .current {
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .site-navigation a {
@@ -247,4 +255,65 @@ input[type="search"] + button:active {
   font-size: 16px;
   font-family: "Gilroy Extrabold", "Arial", sans-serif;
   line-height: 40px;
+}
+
+.main-footer {
+  background-color: #464646;
+  color: #ffffff;
+}
+
+.footer-logo {
+  color: rgb(255, 198, 0);
+}
+
+.footer-logo:hover,
+.footer-logo:focus {
+  color: rgba(255, 198, 0, 0.6);
+}
+
+.footer-logo:active {
+  color: rgba(255, 198, 0, 0.3);
+}
+
+.footer-top a:not(.footer-logo):not(.current) {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-top a:not(.footer-logo):hover,
+.footer-top a:not(.footer-logo):focus {
+  color: rgb(255, 255, 255);
+}
+
+.footer-top a:not(.footer-logo):active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.footer-top .current {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.footer-middle a {
+  color: #ffffff;
+}
+
+.footer-middle a:hover,
+.footer-middle a:focus {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-middle a:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.footer-social-btn a {
+  color: #ffffff;
+}
+
+.footer-bottom .footer-copyright:hover,
+.footer-bottom .footer-copyright:focus {
+  opacity: 0.6;
+}
+
+.footer-bottom .footer-copyright:active {
+  opacity: 0.3;
 }
