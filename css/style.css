@@ -48,9 +48,11 @@ a {
   text-decoration: none;
 }
 
-.btn {
+a.btn,
+button.btn {
   border: none;
-  background-color: rgb(240, 197, 46);
+  background-color: transparent;
+  background-image: linear-gradient(transparent 0%, transparent 33%, rgb(240, 197, 46) 33%, rgb(240, 197, 46) 66%, transparent 66%, transparent 100%);
   color: #000000;
   vertical-align: middle;
   text-align: center;
@@ -62,12 +64,15 @@ a {
   cursor: pointer;
 }
 
-.btn:hover,
-.btn:focus {
+a.btn:hover,
+button.btn:hover,
+a.btn:focus,
+button.btn:focus {
   background-color: rgb(240, 197, 46);
 }
 
-.btn:active {
+a.btn:active,
+button.btn:active {
   background-color: rgb(240, 197, 46);
   color: rgba(0, 0, 0, 0.3);
 }
@@ -183,6 +188,26 @@ input[type="search"] + button:active {
   line-height: 56px;
 }
 
+.new-product-item h3::after {
+  background-color: rgba(240, 197, 46, 0.5);
+  color: #ffffff;
+  font-size: 179.2px;
+  font-family: "Gilroy Extrabold", "Arial", sans-serif;
+  line-height: 179.2px;
+}
+
+.new-product-item:nth-child(1) h3::after {
+  content: "01";
+}
+
+.new-product-item:nth-child(2) h3::after {
+  content: "02";
+}
+
+.new-product-item:nth-child(3) h3::after {
+  content: "03";
+}
+
 .new-product-features span {
   color: #000000;
   font-size: 36px;
@@ -193,14 +218,6 @@ input[type="search"] + button:active {
 .new-product-features p {
   font-size: 13px;
   line-height: 20px;
-}
-
-.slide-number {
-  background-color: rgba(240, 197, 46, 0.5);
-  color: #ffffff;
-  font-size: 179.2px;
-  font-family: "Gilroy Extrabold", "Arial", sans-serif;
-  line-height: 179.2px;
 }
 
 .product-item a,
@@ -223,11 +240,13 @@ input[type="search"] + button:active {
 
 .service-btn .btn:active {
   background-color: #000000;
+  background-image: none;
   color: #f7e184;
 }
 
 .service-btn .btn.current {
   background-color: #000000;
+  background-image: none;
   color: #f7e184;
 }
 
@@ -301,7 +320,7 @@ input[type="search"] + button:active {
   border: none;
 }
 
-fieldset:nth-of-type(1) label {
+.cost label {
   color: rgba(0, 0, 0, 0.2);
   text-transform: lowercase;
   font-size: 14px;
