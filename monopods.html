@@ -4,6 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <title>Моноподы для селфи</title>
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -14,10 +16,11 @@
         <form class="form-search" action="https://echo.htmlacademy.ru" method="post">
           <label for="search-field">Поиск по сайту</label>
           <input type="search" id="search-field" name="search" placeholder="Поиск по сайту">
+          <button type="submit">Найти</button>
         </form>
         <ul class="user-login">
           <li><a href="profile.html">Валентин Петухов</a></li>
-          <li><a href="logout.html">Выйти</a></li>
+          <li><a class="current" href="logout.html">Выйти</a></li>
         </ul>
         <a href="compare.html">Сравнить</a>
         <a href="basket.html">Корзина</a>
@@ -54,22 +57,16 @@
     <section class="filters">
       <h2>Фильтр:</h2>
       <form class="form-filter" action="https://echo.htmlacademy.ru" method="get" oninput="costoutput.value=cost.value">
-        <fieldset>
+        <fieldset class="cost">
           <legend>Стоимость</legend>
-          <ul>
-            <li class="filter-option">
-              <label class="visually-hidden" for="cost-field">Цена</label>
-              <input class="filter-cost" type="range" id="cost-field" name="cost" value="5000" step="500" min="0" max="8000">
-            </li>
-            <li class="filter-option">
-              <label>
-                От <output>0</output>
-              </label>
-              <label>
-                До <output name="costoutput">5000</output>
-              </label>
-            </li>
-          </ul>
+          <label class="visually-hidden" for="cost-field">Цена</label>
+          <input class="filter-cost" type="range" id="cost-field" name="cost" value="5000" step="500" min="0" max="8000">
+          <label>
+            От <output>0</output>
+          </label>
+          <label>
+            До <output name="costoutput">5000</output>
+          </label>
         </fieldset>
         <fieldset>
           <legend>Цвет</legend>
@@ -116,13 +113,13 @@
     <section class="sort">
       <h2>Сортировка:</h2>
       <ul class="sort-list">
-        <li><button class="sort-item current" type="button">По цене</button></li>
-        <li><button class="sort-item" type="button">По типу</button></li>
-        <li><button class="sort-item" type="button">По популярности</button></li>
+        <li><a class="sort-item current" href="#">По цене</a></li>
+        <li><a class="sort-item" href="#">По типу</a></li>
+        <li><a class="sort-item" href="#">По популярности</a></li>
       </ul>
       <ul class="sort-list-btn">
-        <li><button class="sort-item-btn" type="button">По убыванию</button></li>
-        <li><button class="sort-item-btn current" type="button">По возрастанию</button></li>
+        <li><a class="sort-item-btn" href="#">По убыванию</a></li>
+        <li><a class="sort-item-btn current" href="#">По возрастанию</a></li>
       </ul>
     </section>
 
@@ -143,7 +140,7 @@
         <li class="catalog-item">
           <article>
             <h3><a href="catalog-item.html">Профессиональная селфи-палка</a></h3>
-            <span class="catalog-price">1500 руб.</span>
+            <span class="catalog-price">1 500 руб.</span>
             <img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
             <div class="catalog-item-container">
               <button class="btn" type="button">В корзину</button>
@@ -154,7 +151,7 @@
         <li class="catalog-item">
           <article>
             <h3><a href="catalog-item.html">Непотопляемая селфи-палка</a></h3>
-            <span class="catalog-price">2500 руб.</span>
+            <span class="catalog-price">2 500 руб.</span>
             <img src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
             <div class="catalog-item-container">
               <button class="btn" type="button">В корзину</button>
@@ -164,7 +161,7 @@
         </li>
         <li class="catalog-item">
           <h3><a href="catalog-item.html">Селфи-палка «Следуй за мной»</a></h3>
-          <span class="catalog-price">4900 руб.</span>
+          <span class="catalog-price">4 900 руб.</span>
           <span>New</span>
           <img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
           <div class="catalog-item-container">
@@ -175,11 +172,11 @@
       </ul>
 
       <ul class="pagination-list">
-        <li class="pagination-item"><a href="#">Назад</a></li>
+        <li class="pagination-item pagination-btn"><a href="#">Назад</a></li>
         <li class="pagination-item current"><a>1</a></li>
         <li class="pagination-item"><a href="#">2</a></li>
         <li class="pagination-item"><a href="#">3</a></li>
-        <li class="pagination-item"><a href="#">Вперед</a></li>
+        <li class="pagination-item pagination-btn"><a href="#">Вперед</a></li>
       </ul>
     </section>
 
@@ -190,7 +187,7 @@
       <a class="footer-logo" href="index.html">Device</a>
       <ul class="user-login">
         <li><a href="profile.html">Валентин Петухов</a></li>
-        <li><a href="logout.html">Выйти</a></li>
+        <li><a class="current" href="logout.html">Выйти</a></li>
       </ul>
       <a href="compare.html">Сравнить</a>
       <a href="basket.html">Корзина</a>
