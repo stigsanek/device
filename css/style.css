@@ -45,7 +45,8 @@ body {
   line-height: 30px;
 }
 
-.wrapper {
+.wrapper,
+.wrapper-catalog {
   margin: 0 auto;
   padding: 0 20px;
   width: 1160px;
@@ -426,7 +427,9 @@ input[type="search"] + button:active {
 
 .breadcrumbs {
   margin: 0;
+  margin-bottom: 50px;
   padding: 0;
+  padding-left: 60px;
 }
 
 .breadcrumbs a {
@@ -444,6 +447,23 @@ input[type="search"] + button:active {
   color: rgba(0, 0, 0, 0.1);
 }
 
+.page-title {
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+  padding-left: 60px;
+}
+
+.content-columns {
+  width: 100%;
+}
+
+.wrapper-catalog {
+  display: flex;
+
+  justify-content: space-between;
+}
+
 .filters,
 .sort,
 .pagination-list {
@@ -451,11 +471,14 @@ input[type="search"] + button:active {
 }
 
 .filters {
+  padding-left: 60px;
   width: 268px;
 }
 
 .filters h2,
 .sort h2 {
+  margin: 0;
+  padding: 0;
   color: #000000;
   text-transform: uppercase;
   letter-spacing: 3.2px;
@@ -487,7 +510,16 @@ input[type="search"] + button:active {
   color: #a6a6a6;
 }
 
-.sort-list {
+.catalog-container {
+  width: 760px;
+}
+
+.sort {
+  margin-bottom: 70px;
+}
+
+.sort-list,
+.sort-list-btn {
   margin: 0;
   padding: 0;
 }
@@ -508,6 +540,31 @@ input[type="search"] + button:active {
 .sort-item:active,
 .sort-item.current {
   color: #000000;
+}
+
+.catalog-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 40px;
+
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.catalog-item {
+  margin-bottom: 40px;
+  margin-right: 40px;
+  width: 360px;
+}
+
+.catalog-item:nth-of-type(2n) {
+  margin-right: 0;
+}
+
+.catalog-item:nth-last-of-type(1),
+.catalog-item:nth-last-of-type(2) {
+  margin-bottom: 0;
 }
 
 .catalog-item img:hover {
@@ -544,6 +601,13 @@ input[type="search"] + button:active {
 
 .catalog-btn:active {
   color: rgba(0, 0, 0, 0.2);
+}
+
+.pagination-list {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 80px;
+  width: 760px;
 }
 
 .pagination-item a {
@@ -682,6 +746,7 @@ input[type="search"] + button:active {
 .footer-copyright {
   display: block;
   margin-left: auto;
+  width: 27px;
 }
 
 .footer-copyright:hover,
