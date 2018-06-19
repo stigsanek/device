@@ -15,22 +15,24 @@
         <a class="main-header-logo" href="index.html">Device</a>
         <div class="user-navigation">
           <form class="form-search" action="https://echo.htmlacademy.ru" method="post">
-            <label for="search-field">Поиск по сайту</label>
+            <label class="visually-hidden" for="search-field">Поиск по сайту</label>
             <input type="search" id="search-field" name="search" placeholder="Поиск по сайту">
             <button type="submit">Найти</button>
           </form>
           <div class="user-container">
             <ul class="user-login">
-              <li><a href="profile.html">Валентин Петухов</a></li>
-              <li><a class="current" href="logout.html">Выйти</a></li>
+              <li class="user-login-item"><a class="icon-link login" href="profile.html">Валентин Петухов</a></li>
+              <li class="user-login-item"><a class="current" href="logout.html">Выйти</a></li>
             </ul>
-            <a href="compare.html">Сравнить</a>
-            <a href="basket.html">Корзина</a>
+            <ul class="user-btn">
+              <li><a class="icon-link compare" href="compare.html">Сравнить</a></li>
+              <li><a class="icon-link basket" href="basket.html">Корзина</a></li>
+            </ul>
           </div>
         </div>
         <ul class="site-navigation">
           <li class="site-navigation-item">
-            <a href="catalog.html">Каталог товаров</a>
+            <a class="drop" href="catalog.html">Каталог товаров</a>
             <ul class="site-navigation-catalog">
               <li><a href="vr.html">Виртуальная реальность</a></li>
               <li><a href="fitness-wristbands.html">Фитнес-браслеты</a></li>
@@ -196,11 +198,13 @@
         <a class="footer-logo" href="index.html">Device</a>
         <div class="user-container">
           <ul class="user-login">
-            <li><a href="profile.html">Валентин Петухов</a></li>
-            <li><a class="current" href="logout.html">Выйти</a></li>
+            <li class="user-login-item"><a class="icon-link login" href="profile.html">Валентин Петухов</a></li>
+            <li class="user-login-item"><a class="current" href="logout.html">Выйти</a></li>
           </ul>
-          <a href="compare.html">Сравнить</a>
-          <a href="basket.html">Корзина</a>
+          <ul class="user-btn">
+            <li><a class="icon-link compare" href="compare.html">Сравнить</a></li>
+            <li><a class="icon-link basket" href="basket.html">Корзина</a></li>
+          </ul>
         </div>
       </div>
       <div class="footer-middle">
