@@ -639,7 +639,6 @@ input[type="search"] + button:active {
 .product {
   margin-bottom: 73px;
   padding-top: 191px;
-  outline: 1px dotted tomato;
 }
 
 .product-list {
@@ -732,7 +731,7 @@ input[type="search"] + button:active {
 }
 
 .service {
-  margin-bottom: 96px;
+  margin-bottom: 95px;
   padding-top: 26px;
   padding-bottom: 100px;
   width: 100%;
@@ -860,7 +859,7 @@ input[type="search"] + button:active {
 }
 
 .brands {
-  margin-bottom: 90px;
+  margin-bottom: 83px;
 }
 
 .brands-list {
@@ -873,6 +872,8 @@ input[type="search"] + button:active {
 
   -webkit-box-pack: justify;
   justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .brands-item {
@@ -892,7 +893,52 @@ input[type="search"] + button:active {
 
 .about-company,
 .contatcs {
+  position: relative;
+  padding-top: 52px;
   width: 560px;
+}
+
+.about-company::before,
+.contatcs::before {
+  position: absolute;
+  top: 0;
+  width: 80px;
+  height: 7px;
+  background-color: #000000;
+  content: "";
+}
+
+.about-company h2,
+.contatcs h2 {
+  margin-bottom: 44px;
+}
+
+.about-company p,
+.contatcs p {
+  margin: 0;
+  padding: 0;
+}
+
+.about-company .btn,
+.contatcs .btn {
+  padding: 8px 0;
+  min-width: 260px;
+}
+
+.about-company p {
+  margin-bottom: 30px;
+  max-width: 485px;
+}
+
+.about-company p:last-of-type {
+  margin-bottom: 65px;
+}
+
+.transport-commany-list {
+  margin: 0;
+  margin-bottom: 54px;
+  padding: 0;
+  padding-left: 35px;
 }
 
 .transport-commany-item {
@@ -900,6 +946,15 @@ input[type="search"] + button:active {
   font-size: 16px;
   font-family: "Gilroy Extrabold", "Arial", sans-serif;
   line-height: 40px;
+}
+
+.contatcs p {
+  margin-bottom: 40px;
+}
+
+.contatcs .map {
+  display: block;
+  margin-bottom: 58px;
 }
 
 .breadcrumbs {
