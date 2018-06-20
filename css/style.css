@@ -120,6 +120,7 @@ button.btn:active {
 .service-btn,
 .service-list,
 .brands-list,
+.transport-commany-list,
 .breadcrumbs,
 .filters ul,
 .sort ul,
@@ -457,6 +458,10 @@ input[type="search"] + button:active {
   font-size: 15px;
   font-family: "Open Sans Light", "Arial", sans-serif;
   line-height: 36px;
+}
+
+main.container {
+  margin-bottom: 82px;
 }
 
 .new-product {
@@ -885,7 +890,6 @@ input[type="search"] + button:active {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
-  margin-bottom: 80px;
 
   -webkit-box-pack: justify;
   justify-content: space-between;
@@ -942,10 +946,22 @@ input[type="search"] + button:active {
 }
 
 .transport-commany-item {
+  position: relative;
   color: #000000;
   font-size: 16px;
   font-family: "Gilroy Extrabold", "Arial", sans-serif;
   line-height: 40px;
+}
+
+.transport-commany-item::before {
+  position: absolute;
+  top: 15px;
+  left: -34px;
+  width: 4px;
+  height: 4px;
+  border: 2px solid #e5e5e5;
+  border-radius: 50%;
+  content: "";
 }
 
 .contatcs p {
@@ -1203,7 +1219,7 @@ input[type="search"] + button:active {
 }
 
 .main-footer {
-  padding: 60px 0;
+  padding: 60px 0 40px 0;
   width: 100%;
   background-color: #464646;
   color: #ffffff;
@@ -1214,7 +1230,7 @@ input[type="search"] + button:active {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
-  margin-bottom: 22px;
+  margin-bottom: 20px;
 
   -webkit-box-pack: justify;
   justify-content: space-between;
@@ -1286,7 +1302,7 @@ input[type="search"] + button:active {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
 
   -webkit-box-pack: justify;
   justify-content: space-between;
@@ -1295,6 +1311,7 @@ input[type="search"] + button:active {
 .footer-middle p {
   margin: 0;
   padding: 0;
+  padding-top: 2px;
   width: 210px;
 }
 
@@ -1313,6 +1330,8 @@ input[type="search"] + button:active {
 
   -webkit-box-pack: justify;
   justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .footer-middle a {
@@ -1329,13 +1348,24 @@ input[type="search"] + button:active {
 }
 
 .footer-bottom {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: center;
+  -ms-flex-pack: end;
 
-  -webkit-box-pack: center;
-  justify-content: center;
+  -webkit-box-pack: end;
+  justify-content: flex-end;
+}
+
+.footer-bottom::before {
+  position: absolute;
+  top: 15px;
+  left: 0;
+  width: 80px;
+  height: 7px;
+  background-color: #ffc600;
+  content: "";
 }
 
 .footer-social-btn {
@@ -1344,7 +1374,7 @@ input[type="search"] + button:active {
   display: flex;
   -ms-flex-pack: justify;
   margin: 0;
-  margin-left: 500px;
+  margin-right: 480px;
   padding: 0;
   width: 160px;
 
@@ -1358,7 +1388,6 @@ input[type="search"] + button:active {
 
 .footer-copyright {
   display: block;
-  margin-left: auto;
   width: 27px;
 }
 
