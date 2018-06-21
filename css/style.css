@@ -84,7 +84,7 @@ button.btn {
   background-image: -o-linear-gradient(transparent 0%, transparent 40%, rgb(240, 197, 46) 40%, rgb(240, 197, 46) 60%, transparent 60%, transparent 100%);
   background-image: linear-gradient(transparent 0%, transparent 40%, rgb(240, 197, 46) 40%, rgb(240, 197, 46) 60%, transparent 60%, transparent 100%);
   color: #000000;
-  vertical-align: top;
+  vertical-align: middle;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 3.6px;
@@ -142,7 +142,7 @@ button.btn:active {
   display: inline-block;
   margin-left: -2px;
   color: #000000;
-  vertical-align: top;
+  vertical-align: middle;
   text-transform: uppercase;
   font-size: 48px;
   font-family: "Gilroy Extrabold", "Arial", sans-serif;
@@ -252,7 +252,7 @@ input[type="search"] + button:active {
 .user-container a {
   display: block;
   padding: 7px 0 7px 20px;
-  vertical-align: center;
+  vertical-align: middle;
 }
 
 .user-login-item:first-of-type a,
@@ -377,6 +377,7 @@ input[type="search"] + button:active {
 
 .site-navigation-item:first-child {
   position: relative;
+  min-width: 250px;
   margin-right: 254px;
 }
 
@@ -392,7 +393,6 @@ input[type="search"] + button:active {
   display: block;
   padding: 10px 0;
   color: #000000;
-  vertical-align: center;
   text-transform: uppercase;
   letter-spacing: 3.6px;
   font-size: 18px;
@@ -628,7 +628,7 @@ input[type="search"] + button:active {
 
 .new-product-controls li {
   display: inline-block;
-  vertical-align: top;
+  vertical-align: middle;
 }
 
 .product-item a,
@@ -1095,7 +1095,7 @@ input[type="search"] + button:active {
 
 .sort h2 {
   display: inline-block;
-  vertical-align: top;
+  vertical-align: middle;
 }
 
 .sort-list,
