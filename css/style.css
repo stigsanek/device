@@ -114,6 +114,10 @@ button.btn:active {
   background-image: linear-gradient(#ffffff 0%, #ffffff 40px, #f7e296 40px, #f7e296 100%);
 }
 
+.inner {
+  margin-bottom: 37px;
+}
+
 .main-navigation ul,
 .new-product ul,
 .product-list,
@@ -978,7 +982,7 @@ input[type="search"] + button:active {
   display: -ms-flexbox;
   display: flex;
   margin: 0;
-  margin-bottom: 50px;
+  margin-bottom: 45px;
   padding: 0;
   padding-left: 60px;
 }
@@ -1000,13 +1004,22 @@ input[type="search"] + button:active {
 
 .page-title {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   padding: 0;
   padding-left: 60px;
 }
 
-.content-columns {
+.content-columns,
+.content-columns-top {
   width: 100%;
+}
+
+.content-columns-top {
+  background-image: linear-gradient(90deg, #dbdbdb 0%, #dbdbdb 30%, #ebebeb 30%, #ebebeb 100%);
+}
+
+.content-columns {
+  background-image: linear-gradient(90deg, #eeeeee 0%, #eeeeee 30%, #ffffff 30%, #ffffff 100%);
 }
 
 .wrapper-catalog {
@@ -1019,15 +1032,11 @@ input[type="search"] + button:active {
   justify-content: space-between;
 }
 
-.filters,
-.sort,
-.pagination-list {
-  background-color: #ebebeb;
-}
-
 .filters {
+  padding-top: 71px;
   padding-left: 60px;
   width: 268px;
+  background-color: #eeeeee;
 }
 
 .filters ul {
@@ -1035,7 +1044,7 @@ input[type="search"] + button:active {
   padding: 0;
 }
 
-.filters h2,
+.filters-header,
 .sort h2 {
   margin: 0;
   padding: 0;
@@ -1045,6 +1054,13 @@ input[type="search"] + button:active {
   font-size: 16px;
   font-family: "Gilroy Extrabold", "Arial", sans-serif;
   line-height: 24px;
+}
+
+.filters-header {
+  padding: 22px 0 16px 60px;
+  padding-top: 22px;
+  width: 268px;
+  background-color: #dbdbdb;
 }
 
 .filters fieldset {
@@ -1070,12 +1086,11 @@ input[type="search"] + button:active {
   color: #a6a6a6;
 }
 
-.catalog-container {
-  width: 760px;
-}
-
 .sort {
-  margin-bottom: 70px;
+  padding-top: 22px;
+  padding-bottom: 16px;
+  width: 760px;
+  background-color: #ebebeb;
 }
 
 .sort h2 {
@@ -1110,6 +1125,11 @@ input[type="search"] + button:active {
   color: #000000;
 }
 
+.catalog {
+  padding-top: 71px;
+  width: 760px;
+}
+
 .catalog-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1129,6 +1149,7 @@ input[type="search"] + button:active {
   margin-right: 40px;
   margin-bottom: 40px;
   width: 360px;
+  outline: 1px dotted tomato;
 }
 
 .catalog-item:nth-of-type(2n) {
@@ -1138,6 +1159,11 @@ input[type="search"] + button:active {
 .catalog-item:nth-last-of-type(1),
 .catalog-item:nth-last-of-type(2) {
   margin-bottom: 0;
+}
+
+.catalog-item h3 {
+  margin: 0;
+  padding: 0;
 }
 
 .catalog-item img:hover {
