@@ -622,7 +622,7 @@ input[type="search"] + button:active {
 
 .new-product-controls {
   position: absolute;
-  right: 82px;
+  right: 83px;
   bottom: 137px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -642,13 +642,14 @@ input[type="search"] + button:active {
 }
 
 .new-product-controls button {
-  width: 13px;
-  height: 13px;
+  width: 16px;
+  height: 16px;
+  outline: 1px dotted;
   border: none;
   background-color: transparent;
   background-image: url("../img/slider-button-empty.svg");
   background-position: center;
-  background-size: cover;
+  background-size: 12px auto;
   background-repeat: no-repeat;
 }
 
@@ -1510,17 +1511,19 @@ a.quadcopters::after {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: center;
-  -ms-flex-align: center;
   margin: 0;
   margin-bottom: 75px;
   padding: 0;
   width: 760px;
   background-color: #ebebeb;
 
-  -webkit-box-pack: center;
-  justify-content: center;
+  -webkit-box-pack: justify;
+
+  -ms-flex-pack: justify;
+
+  justify-content: space-between;
   -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
