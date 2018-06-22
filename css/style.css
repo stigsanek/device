@@ -196,6 +196,7 @@ button.btn:active {
 }
 
 input[type="search"] {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   padding: 7px 0 7px 40px;
@@ -377,8 +378,8 @@ input[type="search"] + button:active {
 
 .site-navigation-item:first-child {
   position: relative;
-  min-width: 250px;
   margin-right: 254px;
+  min-width: 250px;
 }
 
 .site-navigation-item:nth-child(3) {
@@ -766,7 +767,8 @@ input[type="search"] + button:active {
   margin: 0;
   margin-right: 80px;
   padding: 0;
-  padding-top: 53px;
+  padding-top: 52px;
+  width: 280px;
 
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -787,23 +789,24 @@ input[type="search"] + button:active {
 
 .service-btn li {
   margin-bottom: 24px;
-  width: 280px;
 }
 
 .service-btn .btn {
+  box-sizing: border-box;
   min-width: 160px;
-  max-width: 280px;
 }
 
 .service-btn .btn:active {
-  padding-right: 200px;
+  padding-right: 140px;
+  width: 100%;
   background-color: #000000;
   background-image: none;
   color: #f7e184;
 }
 
 .service-btn .btn.current {
-  padding-right: 200px;
+  padding-right: 140px;
+  width: 100%;
   background-color: #000000;
   background-image: none;
   color: #f7e184;
