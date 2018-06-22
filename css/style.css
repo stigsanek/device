@@ -1104,25 +1104,25 @@ a.quadcopters::after {
 }
 
 .form-filter fieldset {
-  position: relative;
   margin: 0;
   margin-bottom: 30px;
   padding: 0;
   border: none;
 }
 
-.form-filter fieldset::before {
+.form-filter legend {
+  margin-bottom: 20px;
+  padding-top: 12px;
+  position: relative;
+}
+
+.form-filter legend::before {
   position: absolute;
   top: 0;
   width: 200px;
   height: 2px;
   background-color: #000000;
   content: "";
-}
-
-.form-filter legend {
-  margin-bottom: 20px;
-  padding-top: 12px;
 }
 
 .cost label,
