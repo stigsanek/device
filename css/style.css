@@ -622,10 +622,38 @@ input[type="search"] + button:active {
 
 .new-product-controls {
   position: absolute;
-  right: 70px;
-  bottom: 135px;
+  right: 82px;
+  bottom: 137px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
   margin: 0;
   padding: 0;
+  width: 80px;
+
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+}
+
+.new-product-controls li {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.new-product-controls button {
+  width: 13px;
+  height: 13px;
+  border: none;
+  background-color: transparent;
+  background-image: url("../img/slider-button-empty.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.new-product-controls .current {
+  background-image: url("../img/slider-button.svg");
 }
 
 .product-item a,
@@ -1111,9 +1139,9 @@ a.quadcopters::after {
 }
 
 .form-filter legend {
+  position: relative;
   margin-bottom: 20px;
   padding-top: 12px;
-  position: relative;
 }
 
 .form-filter legend::before {
