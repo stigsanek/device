@@ -644,7 +644,6 @@ input[type="search"] + button:active {
 .new-product-controls button {
   width: 16px;
   height: 16px;
-  outline: 1px dotted;
   border: none;
   background-color: transparent;
   background-image: url("../img/slider-button-empty.svg");
