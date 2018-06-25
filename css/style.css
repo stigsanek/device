@@ -201,7 +201,7 @@ input[type="search"] {
   margin: 0;
   padding: 0;
   padding: 7px 0 7px 40px;
-  min-height: 40px;
+  min-height: 50px;
   width: 357px;
   border: none;
   border-bottom: 2px solid transparent;
@@ -228,7 +228,6 @@ input[type="search"] + button {
   padding: 7px 18px;
   border: 2px solid #000000;
   background-color: transparent;
-  vertical-align: middle;
   text-align: center;
   font: inherit;
 }
