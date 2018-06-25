@@ -15,21 +15,23 @@
         <a class="main-header-logo">Device</a>
         <div class="user-navigation">
           <form class="form-search" action="https://echo.htmlacademy.ru" method="post">
-            <label for="search-field">Поиск по сайту</label>
+            <label class="visually-hidden" for="search-field">Поиск по сайту</label>
             <input type="search" id="search-field" name="search" placeholder="Поиск по сайту">
             <button type="submit">Найти</button>
           </form>
           <div class="user-container">
             <ul class="user-login">
-              <li><a href="login.html">Войти</a></li>
+              <li class="user-login-item"><a class="icon-link login" href="login.html">Войти</a></li>
             </ul>
-            <a href="compare.html">Сравнить</a>
-            <a href="basket.html">Корзина</a>
+            <ul class="user-btn">
+              <li><a class="icon-link compare" href="compare.html">Сравнить</a></li>
+              <li><a class="icon-link basket" href="basket.html">Корзина</a></li>
+            </ul>
           </div>
         </div>
         <ul class="site-navigation">
           <li class="site-navigation-item">
-            <a href="catalog.html">Каталог товаров</a>
+            <a class="drop" href="catalog.html">Каталог товаров</a>
             <ul class="site-navigation-catalog">
               <li><a href="vr.html">Виртуальная реальность</a></li>
               <li><a href="fitness-wristbands.html">Фитнес-браслеты</a></li>
@@ -56,70 +58,76 @@
         <h2 class="visually-hidden">Новая продукция</h2>
         <ul class="new-product-list">
           <li class="new-product-item">
-            <h3>Делай селфи, как Бен Стиллер!</h3>
             <img src="img/slider-1.png" width="384" height="486" alt="Монопод для селфи">
-            <p>Самая длинная палка для селфи доступна в нашем магазине.<br> Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-            <ul class="new-product-features">
-              <li>
-                <span>8,5 м</span>
-                <p>Длинна палки</p>
-              </li>
-              <li>
-                <span>5 кг</span>
-                <p>Вес палки</p>
-              </li>
-              <li>
-                <span>Карбон</span>
-                <p>Материал</p>
-              </li>
-            </ul>
-            <a class="btn" href="#">Подробнее</a>
+            <div class="description-container">
+              <h3>Делай селфи,<br> как Бен Стиллер!</h3>
+              <p class="description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+              <a class="btn" href="#">Подробнее</a>
+              <ul class="new-product-features">
+                <li>
+                  <span>8,5 м</span>
+                  <p>Длина палки</p>
+                </li>
+                <li>
+                  <span>5 кг</span>
+                  <p>Вес палки</p>
+                </li>
+                <li>
+                  <span>Карбон</span>
+                  <p>Материал</p>
+                </li>
+              </ul>
+            </div>
           </li>
           <li class="new-product-item">
-            <h3>Худеем правильно!</h3>
             <img src="img/slider-2.png" width="345" height="485" alt="Фитнес-браслет">
-            <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-            <ul class="new-product-features">
-              <li>
-                <span>48 часов</span>
-                <p>Без подзарядки</p>
-              </li>
-            </ul>
-            <a class="btn" href="#">Подробнее</a>
+            <div class="description-container">
+              <h3>Худеем<br> правильно!</h3>
+              <p class="description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+              <a class="btn" href="#">Подробнее</a>
+              <ul class="new-product-features">
+                <li>
+                  <span>48 часов</span>
+                  <p>Без подзарядки</p>
+                </li>
+              </ul>
+            </div>
           </li>
           <li class="new-product-item">
-            <h3>Пархает как бабочка, жалит как пчела!</h3>
             <img src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер">
-            <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-            <ul class="new-product-features">
-              <li>
-                <span>800 м</span>
-                <p>Дальность полета</p>
-              </li>
-              <li>
-                <span>50 м</span>
-                <p>Радиус поражения</p>
-              </li>
-            </ul>
-            <a class="btn" href="#">Подробнее</a>
+            <div class="description-container">
+              <h3>Порхает как бабочка, жалит как пчела!</h3>
+              <p class="description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+              <a class="btn" href="#">Подробнее</a>
+              <ul class="new-product-features">
+                <li>
+                  <span>800 м</span>
+                  <p>Дальность полета</p>
+                </li>
+                <li>
+                  <span>50 м</span>
+                  <p>Радиус поражения</p>
+                </li>
+              </ul>
+            </div>
           </li>
         </ul>
         <ul class="new-product-controls">
-          <li><button type="button">1 слайд</button></li>
-          <li><button type="button">2 слайд</button></li>
-          <li><button type="button">3 слайд</button></li>
+          <li><button class="current" type="button"><span class="visually-hidden">1 слайд</span></button></li>
+          <li><button type="button"><span class="visually-hidden">2 слайд</span></button></li>
+          <li><button type="button"><span class="visually-hidden">3 слайд</span></button></li>
         </ul>
       </section>
 
       <section class="product">
         <h2 class="visually-hidden">Наша продукция</h2>
         <ul class="product-list">
-          <li class="product-item"><a href="vr.html">Виртуальная реальность</a></li>
-          <li class="product-item"><a href="monopods.html">Моноподы для селфи</a></li>
-          <li class="product-item"><a href="action-cameras.html">Экшн-камеры</a></li>
-          <li class="product-item"><a href="fitness-wristbands.html">Фитнес-браслеты</a></li>
-          <li class="product-item"><a href="smart-watch.html">Умные часы</a></li>
-          <li class="product-item"><a href="quadcopters.html">Квадрокоптеры</a></li>
+          <li class="product-item"><a class="vr" href="vr.html">Виртуальная реальность</a></li>
+          <li class="product-item"><a class="monopods" href="monopods.html">Моноподы для селфи</a></li>
+          <li class="product-item"><a class="action-cameras" href="action-cameras.html">Экшн-камеры</a></li>
+          <li class="product-item"><a class="fitness-wristbands" href="fitness-wristbands.html">Фитнес-браслеты</a></li>
+          <li class="product-item"><a class="smart-watch" href="smart-watch.html">Умные часы</a></li>
+          <li class="product-item"><a class="quadcopters" href="quadcopters.html">Квадрокоптеры</a></li>
         </ul>
       </section>
     </div>
@@ -134,15 +142,15 @@
             <li><button class="btn" type="button">Кредит</button></li>
           </ul>
           <ul class="service-list">
-            <li class="service-item">
+            <li class="service-item delivery">
               <h3>Доставка</h3>
               <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
             </li>
-            <li class="service-item">
+            <li class="service-item warranty">
               <h3>Гарантия</h3>
-              <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
+              <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.<br> Товар, не дом, конечно же.</p>
             </li>
-            <li class="service-item">
+            <li class="service-item credit">
               <h3>Кредит</h3>
               <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
             </li>
@@ -194,9 +202,9 @@
         <section class="contatcs">
           <h2>Контакты</h2>
           <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-          <a href="map.html">
-        <img src="img/map.png" width="560" height="222" alt="Наш адрес - улица Строителей, 15">
-      </a>
+          <a class="map" href="map.html">
+            <img src="img/map.png" width="560" height="222" alt="Наш адрес - улица Строителей, 15">
+          </a>
           <button class="btn" type="button">Напишите нам</button>
         </section>
       </div>
@@ -209,10 +217,12 @@
         <a class="footer-logo">Device</a>
         <div class="user-container">
           <ul class="user-login">
-            <li><a href="login.html">Войти</a></li>
+            <li class="user-login-item"><a class="icon-link login" href="login.html">Войти</a></li>
           </ul>
-          <a href="compare.html">Сравнить</a>
-          <a href="basket.html">Корзина</a>
+          <ul class="user-btn">
+            <li><a class="icon-link compare" href="compare.html">Сравнить</a></li>
+            <li><a class="icon-link basket" href="basket.html">Корзина</a></li>
+          </ul>
         </div>
       </div>
       <div class="footer-middle">
@@ -226,9 +236,21 @@
       </div>
       <div class="footer-bottom">
         <ul class="footer-social-btn">
-          <li><a href="https://www.facebook.com/htmlacademy">Мы в Facebook</a></li>
-          <li><a href="https://www.instagram.com/htmlacademy">Мы в Instagram</a></li>
-          <li><a href="https://twitter.com/htmlacademy_ru">Мы в Twitter</a></li>
+          <li>
+            <a class="social-btn-fb" href="https://www.facebook.com/htmlacademy">
+              <span class="visually-hidden">Мы в Facebook</span>
+            </a>
+          </li>
+          <li>
+            <a class="social-btn-in" href="https://www.instagram.com/htmlacademy">
+              <span class="visually-hidden">Мы в Instagram</span>
+            </a>
+          </li>
+          <li>
+            <a class="social-btn-tw" href="https://twitter.com/htmlacademy_ru">
+              <span class="visually-hidden">Мы в Twitter</span>
+            </a>
+          </li>
         </ul>
         <a class="footer-copyright" href="https://htmlacademy.ru/intensive/htmlcss">
           <img src="img/logo-html.svg" width="27" height="35" alt="Логотип HTML academy">
