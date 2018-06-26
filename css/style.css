@@ -108,7 +108,7 @@ button.btn:active {
 }
 
 .main-header {
-  padding: 15px 60px 40px 60px;
+  padding: 8px 50px 40px 50px;
   background-image: -webkit-linear-gradient(#ffffff 0%, #ffffff 40px, #f7e296 40px, #f7e296 100%);
   background-image: -o-linear-gradient(#ffffff 0%, #ffffff 40px, #f7e296 40px, #f7e296 100%);
   background-image: linear-gradient(#ffffff 0%, #ffffff 40px, #f7e296 40px, #f7e296 100%);
@@ -141,6 +141,7 @@ button.btn:active {
 .footer-logo {
   display: inline-block;
   margin-left: -2px;
+  padding: 7px 10px;
   color: #000000;
   vertical-align: middle;
   text-transform: uppercase;
@@ -150,7 +151,7 @@ button.btn:active {
 }
 
 .main-header-logo {
-  margin-bottom: 13px;
+  margin-bottom: 6px;
 }
 
 .main-header-logo:hover,
@@ -188,7 +189,7 @@ button.btn:active {
 .form-search::before {
   position: absolute;
   top: 15px;
-  left: 2px;
+  left: 12px;
   width: 16px;
   height: 16px;
   background-image: url("../img/search.svg");
@@ -200,7 +201,7 @@ input[type="search"] {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  padding: 7px 7px 7px 40px;
+  padding: 7px 10px 7px 50px;
   min-height: 45px;
   width: 357px;
   border: none;
@@ -253,8 +254,7 @@ input[type="search"] + button:active {
 
 .user-container a {
   display: block;
-  padding: 7px 0 7px 20px;
-  vertical-align: middle;
+  padding: 7px 10px;
 }
 
 .user-login-item:first-of-type a,
@@ -267,7 +267,7 @@ input[type="search"] + button:active {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
-  width: 500px;
+  width: 510px;
 
   -webkit-box-pack: justify;
   justify-content: space-between;
@@ -353,7 +353,7 @@ input[type="search"] + button:active {
   -ms-flex-pack: justify;
   margin: 0;
   padding: 0;
-  width: 220px;
+  width: 230px;
 
   -webkit-box-pack: justify;
   justify-content: space-between;
@@ -378,7 +378,7 @@ input[type="search"] + button:active {
 
 .site-navigation-item:first-child {
   position: relative;
-  margin-right: 254px;
+  margin-right: 264px;
   min-width: 250px;
 }
 
@@ -392,7 +392,7 @@ input[type="search"] + button:active {
 
 .site-navigation a {
   display: block;
-  padding: 10px 0;
+  padding: 10px;
   color: #000000;
   text-transform: uppercase;
   letter-spacing: 3.6px;
@@ -422,7 +422,7 @@ input[type="search"] + button:active {
 
 .site-navigation-item:first-child:hover .site-navigation-catalog {
   position: absolute;
-  left: -60px;
+  left: -50px;
   z-index: 1;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -878,8 +878,8 @@ a.quadcopters::after {
   background-position: top 18px right 25px;
 }
 
-.service-item:nth-of-type(2),
-.service-item:nth-of-type(3) {
+.service-item:nth-of-type(1),
+.service-item:nth-of-type(2) {
   display: none;
 }
 
@@ -1583,12 +1583,17 @@ a.pagination-btn:active {
   color: #ffffff;
 }
 
+.main-footer .wrapper {
+  padding: 0 10px;
+  width: 1180px;
+}
+
 .footer-top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 
   -webkit-box-pack: justify;
   justify-content: space-between;
@@ -1602,7 +1607,7 @@ a.pagination-btn:active {
   display: flex;
   -ms-flex-pack: justify;
   margin-top: -3px;
-  width: 480px;
+  width: 490px;
 
   -webkit-box-pack: justify;
   justify-content: space-between;
@@ -1611,6 +1616,7 @@ a.pagination-btn:active {
 }
 
 .footer-logo {
+  margin-top: -7px;
   color: rgb(255, 198, 0);
 }
 
@@ -1630,7 +1636,7 @@ a.pagination-btn:active {
   -ms-flex-pack: end;
   margin: 0;
   padding: 0;
-  width: 225px;
+  width: 235px;
 
   -webkit-box-pack: end;
   justify-content: flex-end;
@@ -1660,7 +1666,7 @@ a.pagination-btn:active {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
-  margin-bottom: 50px;
+  margin-bottom: 52px;
 
   -webkit-box-pack: justify;
   justify-content: space-between;
@@ -1669,7 +1675,7 @@ a.pagination-btn:active {
 .footer-middle p {
   margin: 0;
   padding: 0;
-  padding-top: 2px;
+  padding: 5px 10px;
   width: 210px;
 }
 
@@ -1684,7 +1690,7 @@ a.pagination-btn:active {
   -ms-flex-pack: justify;
   margin: 0;
   padding: 0;
-  width: 430px;
+  width: 445px;
 
   -webkit-box-pack: justify;
   justify-content: space-between;
@@ -1719,7 +1725,7 @@ a.pagination-btn:active {
 .footer-bottom::before {
   position: absolute;
   top: 15px;
-  left: 0;
+  left: 10px;
   width: 80px;
   height: 7px;
   background-color: #ffc600;
@@ -1732,7 +1738,7 @@ a.pagination-btn:active {
   display: flex;
   -ms-flex-pack: justify;
   margin: 0;
-  margin-right: 482px;
+  margin-right: 472px;
   padding: 0;
   padding-top: 2px;
   width: 143px;
@@ -1774,6 +1780,8 @@ a.pagination-btn:active {
 
 .footer-copyright {
   display: block;
+  margin-top: -10px;
+  padding: 10px;
   width: 27px;
 }
 
