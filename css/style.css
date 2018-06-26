@@ -1231,6 +1231,7 @@ a.quadcopters::after {
 .filter-option label {
   position: relative;
   padding: 5px 5px 5px 38px;
+  cursor: pointer;
 }
 
 .filter-option label::before {
@@ -1260,21 +1261,21 @@ a.quadcopters::after {
   background-image: url("../img/radio-off.svg");
 }
 
-.filter-color:checked + label:hover::before,
-.filter-color:checked + label:focus::before,
-.filter-color:not(:checked) + label:hover::before,
-.filter-color:not(:checked) + label:focus::before,
-.filter-bluetoth:checked + label:hover::before,
-.filter-bluetoth:checked + label:focus::before,
-.filter-bluetoth:not(:checked) + label:hover::before,
-.filter-bluetoth:not(:checked) + label:focus::before {
+.filter-color:checked:hover + label::before,
+.filter-color:checked:focus + label::before,
+.filter-color:not(:checked):hover + label::before,
+.filter-color:not(:checked):focus + label::before,
+.filter-bluetoth:checked:hover + label::before,
+.filter-bluetoth:checked:focus + label::before,
+.filter-bluetoth:not(:checked):hover + label::before,
+.filter-bluetoth:not(:checked):focus + label::before {
   opacity: 0.6;
 }
 
 .filter-color:disabled + label::before,
-.filter-color:disabled + label:hover::before,
+.filter-color:disabled:hover + label::before,
 .filter-bluetoth:disabled + label::before,
-.filter-bluetoth:disabled + label:hover::before {
+.filter-bluetoth:disabled:hover + label::before {
   opacity: 0.25;
 }
 
