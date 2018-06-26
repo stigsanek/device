@@ -915,6 +915,18 @@ a.quadcopters::after {
   width: 260px;
 }
 
+.brands-item a {
+  display: block;
+  filter: grayscale(1);
+  opacity: 0.2;
+}
+
+.brands-item a:hover,
+.brands-item a:focus {
+  filter: grayscale(0);
+  opacity: 1;
+}
+
 .index-columns {
   display: -webkit-box;
   display: -ms-flexbox;
