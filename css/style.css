@@ -1230,12 +1230,12 @@ a.quadcopters::after {
 
 .filter-option label {
   position: relative;
-  padding: 3px 7px 3px 38px;
+  padding: 5px 5px 5px 38px;
 }
 
 .filter-option label::before {
   position: absolute;
-  top: 0;
+  top: 2px;
   left: -1px;
   width: 27px;
   height: 27px;
