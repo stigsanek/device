@@ -503,6 +503,7 @@ input[type="search"] + button:active {
   position: relative;
   z-index: 1;
   margin-top: 80px;
+  margin-left: auto;
   width: 560px;
 }
 
@@ -540,6 +541,7 @@ input[type="search"] + button:active {
 
 .new-product-item img {
   position: relative;
+  margin-right: auto;
 }
 
 .new-product-item:nth-child(1) img {
@@ -917,14 +919,16 @@ a.quadcopters::after {
 
 .brands-item a {
   display: block;
-  filter: grayscale(1);
   opacity: 0.2;
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
 }
 
 .brands-item a:hover,
 .brands-item a:focus {
-  filter: grayscale(0);
   opacity: 1;
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
 }
 
 .index-columns {
