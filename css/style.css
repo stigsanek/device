@@ -2005,6 +2005,7 @@ a.pagination-btn:active {
   position: absolute;
   top: 18px;
   right: 18px;
+  z-index: 1000;
   width: 60px;
   height: 60px;
   border: none;
@@ -2032,6 +2033,19 @@ a.pagination-btn:active {
   margin-left: -480px;
   height: 559px;
   background-color: #e9e9e9;
+}
+
+.modal-map iframe {
+  position: relative;
+  z-index: 2;
+  border: none;
+}
+
+.modal-map img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 
 .modal-show {

@@ -1,7 +1,6 @@
 var link = document.querySelector(".modal-btn");
 var popup = document.querySelector(".modal-write-us");
-var close = document.querySelector(".modal-close");
-
+var close = popup.querySelector(".modal-close");
 
 var form = document.querySelector(".form-write-us");
 var nameField = document.querySelector("[name=name]");
@@ -60,6 +59,29 @@ window.addEventListener("keydown", function (evt) {
     if (popup.classList.contains("modal-show")) {
       popup.classList.remove("modal-show");
       popup.classList.remove("modal-error");
+    }
+  }
+});
+
+var linkMap = document.querySelector(".modal-map-btn");
+var popupMap = document.querySelector(".modal-map");
+var closeMap = popupMap.querySelector(".modal-close");
+
+linkMap.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  popupMap.classList.add("modal-show");
+});
+
+closeMap.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  popupMap.classList.remove("modal-show");
+});
+
+window.addEventListener("keydown", function (evt) {
+  if (evt.keyCode === 27) {
+    evt.preventDefault();
+    if (popupMap.classList.contains("modal-show")) {
+      popupMap.classList.remove("modal-show");
     }
   }
 });
