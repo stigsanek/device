@@ -39,7 +39,6 @@ body {
   padding: 0;
   min-width: 1200px;
   background-color: #ffffff;
-  background-color: #ffffff;
   color: #464646;
   letter-spacing: 0.2px;
   font-size: 15px;
@@ -489,13 +488,22 @@ input[type="search"] + button:active {
   display: flex;
   -ms-flex-pack: justify;
   width: 100%;
+  min-height: 500px;
 
   -webkit-box-pack: justify;
   justify-content: space-between;
 }
 
-.new-product-item:nth-child(2),
-.new-product-item:nth-child(3) {
+.promo-2,
+.promo-3 {
+  display: none;
+}
+
+.promo-show {
+  display: flex;
+}
+
+.promo-hidden {
   display: none;
 }
 
@@ -633,14 +641,10 @@ input[type="search"] + button:active {
   margin: 0;
   padding: 0;
   width: 80px;
+  z-index: 1000;
 
   -webkit-box-pack: justify;
   justify-content: space-between;
-}
-
-.new-product-controls li {
-  display: inline-block;
-  vertical-align: middle;
 }
 
 .new-product-controls button {
@@ -881,8 +885,16 @@ a.quadcopters::after {
   background-position: top 18px right 25px;
 }
 
-.service-item:nth-of-type(2),
-.service-item:nth-of-type(3) {
+.warranty,
+.credit {
+  display: none;
+}
+
+.service-show {
+  display: block;
+}
+
+.service-hidden {
   display: none;
 }
 
