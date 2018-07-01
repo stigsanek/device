@@ -488,7 +488,7 @@ input[type="search"] + button:active {
   display: flex;
   -ms-flex-pack: justify;
   width: 100%;
-  min-height: 500px;
+  min-height: 488px;
 
   -webkit-box-pack: justify;
   justify-content: space-between;
