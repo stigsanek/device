@@ -422,7 +422,7 @@ input[type="search"] + button:active {
 .site-navigation-item:first-child:hover .site-navigation-catalog {
   position: absolute;
   left: -50px;
-  z-index: 1;
+  z-index: 10;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -487,8 +487,8 @@ input[type="search"] + button:active {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
+  min-height: 486px;
   width: 100%;
-  min-height: 488px;
 
   -webkit-box-pack: justify;
   justify-content: space-between;
@@ -500,6 +500,8 @@ input[type="search"] + button:active {
 }
 
 .promo-show {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -634,6 +636,7 @@ input[type="search"] + button:active {
   position: absolute;
   right: 83px;
   bottom: 137px;
+  z-index: 1000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -641,7 +644,6 @@ input[type="search"] + button:active {
   margin: 0;
   padding: 0;
   width: 80px;
-  z-index: 1000;
 
   -webkit-box-pack: justify;
   justify-content: space-between;
@@ -1220,10 +1222,17 @@ a.quadcopters::after {
 .range-controls .toggle {
   position: absolute;
   top: 5px;
-  width: 20px;
-  height: 22px;
+  width: 22px;
+  height: 24px;
   background-image: url("../img/filter-button.svg");
+  background-position: center;
+  background-size: 20px 22px;
+  background-repeat: no-repeat;
   cursor: pointer;
+}
+
+.range-controls .toggle:active {
+  background-size: 22px 24px;
 }
 
 .toggle-min {
