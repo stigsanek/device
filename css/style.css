@@ -19,8 +19,8 @@
 @font-face {
   font-weight: 400;
   font-style: normal;
-  font-family: "Open Sans";
-  src: local("Open Sans"),
+  font-family: "Open Sans Regular";
+  src: local("Open Sans Regular"),
   url("../fonts/opensans.woff2") format("woff2"),
   url("../fonts/opensans.woff") format("woff");
 }
@@ -40,7 +40,7 @@ body {
   min-width: 1200px;
   background-color: #ffffff;
   color: #464646;
-  letter-spacing: 0.2px;
+  letter-spacing: 0.01em;
   font-size: 15px;
   font-family: "Open Sans Light", "Arial", sans-serif;
   line-height: 30px;
@@ -86,7 +86,7 @@ button.btn {
   vertical-align: middle;
   text-align: center;
   text-transform: uppercase;
-  letter-spacing: 3.6px;
+  letter-spacing: 0.2em;
   font-size: 18px;
   font-family: "Gilroy Extrabold", "Arial", sans-serif;
   line-height: 24px;
@@ -394,7 +394,7 @@ input[type="search"] + button:active {
   padding: 10px;
   color: #000000;
   text-transform: uppercase;
-  letter-spacing: 3.6px;
+  letter-spacing: 0.2em;
   font-size: 18px;
   font-family: "Gilroy Extrabold", "Arial", sans-serif;
   line-height: 24px;
@@ -422,7 +422,7 @@ input[type="search"] + button:active {
 .site-navigation-item:first-child:hover .site-navigation-catalog {
   position: absolute;
   left: -50px;
-  z-index: 1;
+  z-index: 10;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -487,8 +487,8 @@ input[type="search"] + button:active {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
+  min-height: 486px;
   width: 100%;
-  min-height: 488px;
 
   -webkit-box-pack: justify;
   justify-content: space-between;
@@ -500,6 +500,8 @@ input[type="search"] + button:active {
 }
 
 .promo-show {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -572,7 +574,7 @@ input[type="search"] + button:active {
   margin-bottom: 20px;
   padding: 0;
   color: #000000;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.01em;
   font-size: 47px;
   font-family: "Gilroy Extrabold", "Arial", sans-serif;
   line-height: 56px;
@@ -634,6 +636,7 @@ input[type="search"] + button:active {
   position: absolute;
   right: 83px;
   bottom: 137px;
+  z-index: 1000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -641,7 +644,6 @@ input[type="search"] + button:active {
   margin: 0;
   padding: 0;
   width: 80px;
-  z-index: 1000;
 
   -webkit-box-pack: justify;
   justify-content: space-between;
@@ -851,7 +853,7 @@ a.quadcopters::after {
   margin: 0;
   padding: 0;
   color: #000000;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.01em;
   font-size: 47px;
   font-family: "Gilroy Extrabold", "Arial", sans-serif;
   line-height: 48px;
@@ -1046,7 +1048,7 @@ a.quadcopters::after {
 
 .breadcrumbs li {
   position: relative;
-  margin-right: 36px;
+  margin-right: 37px;
 }
 
 .breadcrumbs li:last-child {
@@ -1147,7 +1149,7 @@ a.quadcopters::after {
   padding: 0;
   color: #000000;
   text-transform: uppercase;
-  letter-spacing: 3.2px;
+  letter-spacing: 0.2em;
   font-size: 16px;
   font-family: "Gilroy Extrabold", "Arial", sans-serif;
   line-height: 24px;
@@ -1220,10 +1222,17 @@ a.quadcopters::after {
 .range-controls .toggle {
   position: absolute;
   top: 5px;
-  width: 20px;
-  height: 22px;
+  width: 22px;
+  height: 24px;
   background-image: url("../img/filter-button.svg");
+  background-position: center;
+  background-size: 20px 22px;
+  background-repeat: no-repeat;
   cursor: pointer;
+}
+
+.range-controls .toggle:active {
+  background-size: 22px 24px;
 }
 
 .toggle-min {
@@ -1347,7 +1356,7 @@ a.quadcopters::after {
   display: block;
   color: rgba(0, 0, 0, 0.3);
   font-size: 14px;
-  font-family: "Open Sans", "Arial", sans-serif;
+  font-family: "Open Sans Regular", "Arial", sans-serif;
   line-height: 18px;
 }
 
@@ -1567,7 +1576,7 @@ a.quadcopters::after {
   display: block;
   color: rgba(0, 0, 0, 0.3);
   text-transform: uppercase;
-  letter-spacing: 3.2px;
+  letter-spacing: 0.2em;
   font-size: 16px;
   font-family: "Gilroy Extrabold", "Arial", sans-serif;
   line-height: 24px;
@@ -1979,7 +1988,7 @@ a.pagination-btn:active {
   border: 3px solid #e5e5e5;
   background-color: #e5e5e5;
   font-size: 14px;
-  font-family: "Open Sans", "Arial", sans-serif;
+  font-family: "Open Sans Regular", "Arial", sans-serif;
   line-height: 18px;
   opacity: 0.5;
 }
