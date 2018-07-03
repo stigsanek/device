@@ -19,8 +19,8 @@
 @font-face {
   font-weight: 400;
   font-style: normal;
-  font-family: "Open Sans";
-  src: local("Open Sans"),
+  font-family: "Open Sans Regular";
+  src: local("Open Sans Regular"),
   url("../fonts/opensans.woff2") format("woff2"),
   url("../fonts/opensans.woff") format("woff");
 }
@@ -1356,7 +1356,7 @@ a.quadcopters::after {
   display: block;
   color: rgba(0, 0, 0, 0.3);
   font-size: 14px;
-  font-family: "Open Sans", "Arial", sans-serif;
+  font-family: "Open Sans Regular", "Arial", sans-serif;
   line-height: 18px;
 }
 
@@ -1988,7 +1988,7 @@ a.pagination-btn:active {
   border: 3px solid #e5e5e5;
   background-color: #e5e5e5;
   font-size: 14px;
-  font-family: "Open Sans", "Arial", sans-serif;
+  font-family: "Open Sans Regular", "Arial", sans-serif;
   line-height: 18px;
   opacity: 0.5;
 }
