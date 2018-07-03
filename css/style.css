@@ -40,7 +40,7 @@ body {
   min-width: 1200px;
   background-color: #ffffff;
   color: #464646;
-  letter-spacing: 0.2px;
+  letter-spacing: 0.01em;
   font-size: 15px;
   font-family: "Open Sans Light", "Arial", sans-serif;
   line-height: 30px;
@@ -86,7 +86,7 @@ button.btn {
   vertical-align: middle;
   text-align: center;
   text-transform: uppercase;
-  letter-spacing: 3.6px;
+  letter-spacing: 0.2em;
   font-size: 18px;
   font-family: "Gilroy Extrabold", "Arial", sans-serif;
   line-height: 24px;
@@ -394,7 +394,7 @@ input[type="search"] + button:active {
   padding: 10px;
   color: #000000;
   text-transform: uppercase;
-  letter-spacing: 3.6px;
+  letter-spacing: 0.2em;
   font-size: 18px;
   font-family: "Gilroy Extrabold", "Arial", sans-serif;
   line-height: 24px;
@@ -574,7 +574,7 @@ input[type="search"] + button:active {
   margin-bottom: 20px;
   padding: 0;
   color: #000000;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.01em;
   font-size: 47px;
   font-family: "Gilroy Extrabold", "Arial", sans-serif;
   line-height: 56px;
@@ -853,7 +853,7 @@ a.quadcopters::after {
   margin: 0;
   padding: 0;
   color: #000000;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.01em;
   font-size: 47px;
   font-family: "Gilroy Extrabold", "Arial", sans-serif;
   line-height: 48px;
@@ -1048,7 +1048,7 @@ a.quadcopters::after {
 
 .breadcrumbs li {
   position: relative;
-  margin-right: 36px;
+  margin-right: 37px;
 }
 
 .breadcrumbs li:last-child {
@@ -1149,7 +1149,7 @@ a.quadcopters::after {
   padding: 0;
   color: #000000;
   text-transform: uppercase;
-  letter-spacing: 3.2px;
+  letter-spacing: 0.2em;
   font-size: 16px;
   font-family: "Gilroy Extrabold", "Arial", sans-serif;
   line-height: 24px;
@@ -1576,7 +1576,7 @@ a.quadcopters::after {
   display: block;
   color: rgba(0, 0, 0, 0.3);
   text-transform: uppercase;
-  letter-spacing: 3.2px;
+  letter-spacing: 0.2em;
   font-size: 16px;
   font-family: "Gilroy Extrabold", "Arial", sans-serif;
   line-height: 24px;
