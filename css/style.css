@@ -936,16 +936,17 @@ a.quadcopters::after {
 
 .brands-item a {
   display: block;
-  opacity: 0.2;
-  -webkit-filter: grayscale(1);
-  filter: grayscale(1);
 }
 
-.brands-item a:hover,
-.brands-item a:focus {
+.brands-image image {
+  opacity: 0.2;
+}
+
+.brands-image:hover image,
+.brands-image:focus image {
   opacity: 1;
-  -webkit-filter: grayscale(0);
-  filter: grayscale(0);
+  -webkit-filter: none;
+  filter: none;
 }
 
 .index-columns {
