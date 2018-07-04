@@ -147,6 +147,7 @@ button.btn:active {
   font-size: 48px;
   font-family: "Gilroy Extrabold", "Arial", sans-serif;
   line-height: 48px;
+  cursor: pointer;
 }
 
 .main-header-logo {
@@ -466,7 +467,7 @@ input[type="search"] + button:active {
 
 .new-product {
   position: relative;
-  margin-bottom: 108px;
+  margin-bottom: 111px;
   background-image: -webkit-linear-gradient(#f7e296 0%, #f7e296 112px, #ffffff 112px, #ffffff 100%);
   background-image: -o-linear-gradient(#f7e296 0%, #f7e296 112px, #ffffff 112px, #ffffff 100%);
   background-image: linear-gradient(#f7e296 0%, #f7e296 112px, #ffffff 112px, #ffffff 100%);
@@ -676,7 +677,7 @@ input[type="search"] + button:active {
 }
 
 .product {
-  margin-bottom: 73px;
+  margin-bottom: 82px;
   padding-top: 191px;
 }
 
@@ -700,6 +701,7 @@ input[type="search"] + button:active {
 
 .product-item a {
   position: relative;
+  display: block;
 }
 
 .product-item a::before {
@@ -827,7 +829,7 @@ a.quadcopters::after {
 .service-btn .btn {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  min-width: 160px;
+  width: 160px;
 }
 
 .service-btn .btn:active {
@@ -984,6 +986,7 @@ a.quadcopters::after {
 .contatcs p {
   margin: 0;
   padding: 0;
+  letter-spacing: 0;
 }
 
 .about-company .btn,
@@ -1028,12 +1031,13 @@ a.quadcopters::after {
 }
 
 .contatcs p {
-  margin-bottom: 40px;
+  margin-bottom: 39px;
+  margin-left: -2px;
 }
 
 .contatcs .map {
   display: block;
-  margin-bottom: 58px;
+  margin-bottom: 59px;
 }
 
 .breadcrumbs {
@@ -1407,7 +1411,7 @@ a.quadcopters::after {
   display: flex;
   -ms-flex-pack: justify;
   margin: 0;
-  margin-bottom: 26px;
+  margin-bottom: 36px;
   padding: 0;
 
   -webkit-box-pack: justify;
@@ -1419,7 +1423,7 @@ a.quadcopters::after {
 .catalog-item {
   position: relative;
   margin-right: 40px;
-  margin-bottom: 40px;
+  margin-bottom: 46px;
   width: 360px;
 }
 
@@ -1448,7 +1452,7 @@ a.quadcopters::after {
 }
 
 .catalog-item img {
-  margin-bottom: 28px;
+  margin-bottom: 32px;
 
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -1460,21 +1464,26 @@ a.quadcopters::after {
   width: 260px;
 }
 
+.catalog-item a {
+  display: block;
+}
+
 .catalog-price {
   font-size: 16px;
   font-family: "Gilroy Light", "Arial", sans-serif;
   line-height: 24px;
 }
 
-.catalog-new {
+.catalog-new::after {
   position: absolute;
-  top: 27px;
+  top: 29px;
   right: 27px;
   width: 55px;
   height: 55px;
   border: 2px solid rgba(0, 0, 0, 0.2);
   border-radius: 50%;
   color: rgba(0, 0, 0, 0.2);
+  content: "new";
   vertical-align: middle;
   text-align: center;
   text-transform: uppercase;
@@ -1553,7 +1562,7 @@ a.quadcopters::after {
   -ms-flex-pack: justify;
   -ms-flex-align: center;
   margin: 0;
-  margin-bottom: 75px;
+  margin-bottom: 76px;
   padding: 0;
   width: 760px;
   background-color: #ebebeb;
@@ -1717,6 +1726,7 @@ a.pagination-btn:active {
   padding: 0;
   padding: 5px 10px;
   width: 210px;
+  letter-spacing: 0;
 }
 
 .footer-middle p:last-of-type {
